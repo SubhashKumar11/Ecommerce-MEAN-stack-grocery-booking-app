@@ -1,0 +1,25 @@
+<div class="search-container">
+    <input [(ngModel)]="searchTerm" type="text" placeholder="Search..." class="search-input" />
+    <button (click)="onSearch()" class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i> <!-- Search icon using Unicode -->
+    </button>
+</div>
+<h3>Searched Item List</h3>
+<div class="card-container">
+    <div class="card" *ngFor="let item of searchResults"> <img [src]="item.imageUrl" alt="no_img" />
+        <h6>{{
+            item.name }}</h6> <br />
+        <div class="item-details">
+            <h6>MRP</h6>
+            <h6>Rate</h6>
+            <h6>Margin</h6>
+        </div>
+        <div class="item-detailss">
+            <h6>₹ {{ item.mrp }}</h6>
+            <h6>₹{{
+                item.rate }}</h6>
+            <h6 style="margin-left: 11px">{{ item.margin }}%</h6>
+        </div> <button (click)="addItemToCart(item)" class="btn-primary">Add to cart</button>
+    </div>
+    <div *ngIf="!searchResults.length && searchTerm">No results found.</div>
+</div>

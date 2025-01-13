@@ -1,0 +1,26 @@
+.wrapper {
+    max-height: 120px;
+    border: none;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-top:
+        1px;
+    margin-bottom: -13px;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+.wrapper .item {
+    min-width: 150px;
+    height: 80px;
+    line-height: 110px;
+    text-align: center;
+    background-color: rgb(9,
+            241, 40);
+    margin-right: 2px;
+    border-radius: 5px;
+    object-fit: fill;
+}

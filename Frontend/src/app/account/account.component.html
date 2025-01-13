@@ -1,0 +1,10 @@
+
+ <div class="account" (click)="toggleCard()"> <i *ngIf="showIcon" class="fa-solid fa-user"></i>
+    <h6 *ngIf="!isLoggedOut">Welcome! {{loggedInUser.username}}</h6>
+</div> <!--
+login/logout card -->
+<div class="card-container" *ngIf="showcard">
+    <div style="margin-top: 20px;" class="card"> <button routerLink="/register-login" style="margin-right: 2px;"
+            type="button" class="btn btn-primary">Login</button> <button type="button" class="btn
+btn-primary" (click)="logOut()" class="btn btn-primary">Logout</button> </div>
+</div>

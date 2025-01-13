@@ -1,0 +1,54 @@
+ .cds {
+    margin-top:
+        20px;
+    margin-bottom: 5px;
+}
+
+.cds h3 {
+    text-align: center;
+    color: aquamarine;
+    text-decoration:
+        underline;
+}
+
+.cards {
+    margin-top: 8px;
+    border-color: rgb(244, 117, 21);
+    margin-left: 3px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.cds img {
+    height: auto;
+    width: 160px;
+}
+
+.card-body p {
+    margin-top: -22px;
+    font-weight: 600;
+    color: rgb(103, 171, 210);
+}
+
+.card-body {
+    margin-top: -20px;
+}
+
+.cards .card-img-top {
+    height: 193px;
+    width: 120px;
+    margin-left: 65px;
+}
+
+.netsum {
+    margin-top: 25px;
+    width: fit-content;
+    margin-left: 4rem;
+    color: brown;
+    border-radius: 20px;
+    background-color: #f8c23b;
+}
+
+.bts {
+    border-radius: 25px;
+    margin-left: 6rem;
+}

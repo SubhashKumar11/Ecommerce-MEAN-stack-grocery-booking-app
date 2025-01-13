@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: relative;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    padding: 11px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color:
+        #d16464;
+    padding: 10px;
+}
+
+.menu li {
+    margin: 5px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #555;
+    display: block;
+    background-color: red;
+    border-radius: 25px;
+    margin-left: -4px;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .menu {
+        background-color: green;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 40%;
+        display: none;
+        margin-right: 170px;
+        border-radius: 10px;
+        z-index: 5;
+    }
+
+    .menu img {
+        width: 20px;
+        height: 20px;
+        display: inline;
+        position: absolute;
+    }
+
+    .menu i {
+        width:
+            25px;
+        height: 25px;
+        display: inline;
+        position: absolute;
+    }
+
+    .logo {
+        margin-left: 12px;
+    }
+
+    .menu li {
+        text-align: center;
+        margin-top: -17px;
+    }
+
+    #menu-toggle:checked+.menu-icon+.menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        margin-top: -20px;
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 280px;
+        z-index: 1000;
+    }
+
+    .crousel-items {
+        width: 100%;
+        height: 50vh;
+        margin-top: 13px;
+        background-color: red;
+    }
+
+    .crousel-item {
+        margin-top: 20px;
+    }
+
+    .crousel-item img {
+        object-fit:
+            fill;
+        height: 7rem;
+    }
+
+    #cosmetic-img img {
+        height: 40px;
+        margin-left: 9px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .cosmetics {
+        margin-top: -7px;
+    }
+
+    strong {
+        margin-left: 8px;
+    }
+
+    .category {
+        display: flex;
+        gap: 1px;
+        font-size: small;
+    }
+
+    #select-product-tittle {
+        text-align: center;
+        font-size: large;
+    }
+
+    .product-select {
+        margin-left: 7px;
+        margin-right: 3px;
+    }
+}
+

@@ -1,0 +1,13 @@
+<form action="" (ngSubmit)="createUser(customerFormData)">
+    <div class="card">
+        <h3>Registraion</h3>
+        <div class="data"> <label for="username"> <input type="text" [(ngModel)]="customerFormData.username"
+                    id="username" name="username" placeholder="Your name.." /> </label> </div>
+        <div class="data"> <label for="email">
+                <input type="text" [(ngModel)]="customerFormData.email" id="email" name="email"
+                    placeholder="Customer email.." /> </label> </div>
+        <div class="data"> <label for="password"> <input type="text" [(ngModel)]="customerFormData.password"
+                    id="password" name="password" placeholder="Create password.." /> </label> </div>
+        <button type="submit" class="btn btn-primary bts">Submit</button>
+    </div>
+</form>

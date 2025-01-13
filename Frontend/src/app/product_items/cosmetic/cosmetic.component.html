@@ -1,0 +1,20 @@
+<div class="special">
+    <h2 id="select-product-tittle"><strong>Cosmetic
+            Product List</strong></h2>
+</div>
+<div class="card-container">
+    <div class="card" *ngFor="let data of cosmeticItems"> <img [src]="data.imageUrl" alt="no_img" />
+        <h6>
+            {{data.name}}</h6> <br />
+        <div class="item-details">
+            <h6>MRP</h6>
+            <h6>Rate</h6>
+            <h6>Margin</h6>
+        </div>
+        <div class="item-detailss">
+            <h6 style="margin-left: auto">₹{{data.mrp}}</h6>
+            <h6 style="margin-left: auto">₹{{data.rate}}</h6>
+            <h6 style="margin-left: auto">₹{{data.margin}}</h6>
+        </div> <button class="btn-primary" (click)="addItemToCart(data)">Add to cart</button>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="cds">
+    <h3>Cart Item Detail</h3>
+    <div *ngFor="let order of orders" class="">
+        <div *ngFor="let cart of order.cart" class="card
+    cards" style="width: 16rem;"> <img [src]="cart.imageUrl" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{cart.name}}</h5>
+                <p>productId:
+                    {{cart.id}}</p>
+                <p>OrderId: {{cart._id}}</p>
+                <p class="card-text">Rate: ₹{{cart.rate}}</p>
+                <p>Margin: ₹{{cart.margin}}</p>
+                <p>Mrp: ₹{{cart.mrp}}</p>
+            </div>
+        </div>
+    </div>
+</div> <!-- way to show string as object {{totalSum[0].total | json}}-->
+    <p class="netsum">Net Sum Of
+        cart: ₹{{totalSum}}</p> <button routerLink="/checkout" class="btn btn-primary
+bts">checkout</button>

@@ -1,0 +1,23 @@
+<nav>
+     <input type="checkbox" id="menu-toggle" />
+     <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="menu">
+        <li style="margin-top:-4px;" routerLink="/home"><a>Home</a></li>
+        <li routerLink="/placed-order"><a>
+                Orders</a></li>
+        <li routerLink="/offers"><a>Offers</a></li>
+        <li routerLink="/help">
+            <a>Help</a>
+        </li>
+        <li><a routerLink="/terms">Terms</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+    </ul>
+    <div routerLink="home" class="logo">
+        <strong><img routerLink="/" style="margin-top: 5px; width: 60px; height: 30px"
+                src="https://logodix.com/logo/895653.png" alt="no_img" /></strong>
+    </div> <!-- search bar
+        -->
+<app-product-search></app-product-search>
+<app-cart></app-cart>
+<app-account></app-account>
+</nav>

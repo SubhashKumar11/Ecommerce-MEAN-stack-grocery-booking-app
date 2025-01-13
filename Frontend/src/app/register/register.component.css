@@ -1,0 +1,34 @@
+.card {
+    width: 200px;
+    height: auto;
+    background-color: #d9c128;
+    margin-top: 19px;
+    margin-bottom:
+        5px;
+    border-radius: 0 15px 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.data input {
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: aqua;
+}
+
+h3 {
+    text-align:
+        center;
+    background-color: red;
+    border-radius: 0 15px;
+    font-style: oblique;
+}
+
+.bts {
+    width:
+        80px;
+    margin-left: 55px;
+    border-radius: 25px;
+    margin-bottom: 4px;
+}

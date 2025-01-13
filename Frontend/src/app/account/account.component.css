@@ -1,0 +1,27 @@
+.account {
+    /* display: flex; float: right;
+    */
+    margin-top: -26px;
+    margin-left: 249px; 
+}
+
+.card {
+    height: auto;
+    width: 145px;
+    position:
+        absolute;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+}
+
+h6 {
+    margin-top:
+        13px;
+    margin-left: -180px;
+    color: rgb(227, 227, 241);
+    background-color: green;
+    width: fit-content;
+    border-radius: 25px;
+}
