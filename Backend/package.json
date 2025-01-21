@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build-script.js",
     "start": "nodemon index.js"
   },
   "author": "subhash",
